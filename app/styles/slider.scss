@@ -17,6 +17,12 @@ html {
 
 a {
   color: #2bacb5;
+  &:link,
+  &:focus,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
 }
 
 .footer a {
@@ -140,6 +146,7 @@ input{
   border-radius: 4px;
 }
 
+.button,
 button{
   background: #31b8b1;
   border: none;
@@ -149,6 +156,7 @@ button{
   border-radius: 4px;
 }
 
+.button,
 button:hover{
   background: whitesmoke;
   color:#3896a8;

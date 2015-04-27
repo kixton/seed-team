@@ -3,11 +3,16 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
   color: #5a5a5a;
   background: #f1edea;
-  width:100%;
   font-family: "Open Sans", "Lucida Grande", Tahoma, sans-serif;
+  width:100%;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 a {

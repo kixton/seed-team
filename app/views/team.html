@@ -17,10 +17,28 @@
   <div class="heading">
     <h2>Our Team</h2>
   </div>
-  <div class="team-members-container row">
-    <div>
-      <img src="https://pbs.twimg.com/profile_images/505455962522525697/1wefOgr2_400x400.jpeg">
-    </div>
+  <div class="team-members-container">
+    <div class="row"><div class="col-md-10 col-md-offset-1"> <!-- outer row to offset -->
+      <div class="row">
+        <div class="row-same-height">
+          <div ng-repeat="member in teamMembers" class="member-container col-sm-6 col-sm-height col-md-4 col-md-height ">
+            <img src="{{member.imgUrl }}" class="profile-img">
+            <div class="bio">
+              <h3 class="name">{{ member.name }}</h3>
+              <h4 class="title">{{ member.title }}</h4>
+              <div class="social">
+                <a ng-show="member.twitter.length > 0" ng-href="https://twitter.com/{{ member.twitter }}" class="fa fa-twitter" target="_blank"></a>
+                <a ng-show="member.linkedin.length > 0"href="https://www.linkedin.com/in/{{ member.linkedin }}" class="fa fa-linkedin-square" target="_blank"></a>
+              </div>
+              <div class="summary">
+                {{ member.summary }}
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div></div> <!-- outer row to offset -->
   </div>
 </div>
 
@@ -32,8 +50,12 @@
   <div class="heading">
     <h2>Investors</h2>
   </div>
-  <div class="logos-container">
-    <img src="https://news.ycombinator.com/yc500.gif" class="logo yc"> 
-    <img src="http://i.imgur.com/eoK2v5N.png" class="logo mission-mkt">
+  <div class="logos-container row">
+    <div class="logo col-md-6">
+      <img src="https://news.ycombinator.com/yc500.gif"> 
+    </div>
+    <div class="logo col-md-6">
+      <img src="http://i.imgur.com/eoK2v5N.png" class="mission">
+    </div>
   </div>
 </div>

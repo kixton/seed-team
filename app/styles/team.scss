@@ -14,9 +14,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 .shadow {
   border-bottom: 1px solid #d1d1d1;
-  box-shadow: 0 0 .5em .14em rgba(49,57,69,0.1);
-  -webkit-box-shadow: 0 0 .5em .14em rgba(49,57,69,0.1);
-  -moz-box-shadow: 0 0 .5em .14em rgba(49,57,69,0.1);
+  box-shadow: 0 0 .5em .14em rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 0 .5em .14em rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 .5em .14em rgba(0,0,0,0.1);
 }
 
 .heading {
@@ -36,8 +36,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   text-align: center;
   background: 
     linear-gradient(
-      rgba(0,0,0,0.5), 
-      rgba(0,0,0,0.5)
+      rgba(49,57,69,0.5), 
+      rgba(49,57,69,0.5)
     ),
     url("../images/yc-team.png") no-repeat;
   background-size: cover;
@@ -88,6 +88,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       img {
         width: 80%;
         max-width: 250px;
+        filter: grayscale(100%) saturate(30%);
+        -webkit-filter: grayscale(100%) saturate(30%);
+        -moz-filter: grayscale(100%) saturate(30%);
+        -o-filter: grayscale(100%) saturate(30%);
+        -ms-filter: grayscale(100%) saturate(30%);
       }
       .bio {
         letter-spacing: 1px;

@@ -76,6 +76,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: #fff;
   .heading {
     padding: 30px 60px;
+    width: 80%;
+    border-bottom: 1px solid #F1EDEA;
+    margin: auto;
   }
   .team-members-container {
     margin: 30px 0;
@@ -88,16 +91,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       }
       .bio {
         letter-spacing: 1px;
+        color: #F1EDEA;
         .name {
           text-transform: uppercase;
           font-weight: 700;
-          font-size: 20px;
+          font-size: 18px;
+          color: #fff;
         }
         .title {
           font-style: italic;
           font-weight: 300;
-          color: #F1EDEA;
-          font-size: 17px;
+          font-size: 16px;
         }
         .social {
           .fa {
@@ -111,7 +115,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
         }
         .summary {
           margin-top: 10px;
-          font-size: 15px;
+          font-size: 14px;
           line-height: 22px;
           text-align: justify;
           font-weight: 300;

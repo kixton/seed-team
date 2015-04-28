@@ -1,12 +1,4 @@
-# seed
+[SEED TEAM PAGE](https://seed-team.herokuapp.com)
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Simple team page for [SEED](https://seed.co), a modern business banking solution.
 
-## Build & development
-
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
